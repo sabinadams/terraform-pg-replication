@@ -58,7 +58,14 @@ Outputs:
 connection_string = "postgresql://postgres:postgres@pg-pulse.cghbgyrueus2.us-east-1.rds.amazonaws.com:5432/pulsedb"
 ```
 
-That connection string is what you will provide when setting up Pulse within your Cloud Project.
+
+# Next steps
+To quickly get up and running with Pulse follow these steps:
+1. Create a new project in Cloud Projects if you don't already have one
+2. Configure Pulse, providing the connection string from above and choosing `us-east-1` as the region
+3. Get an API key for your project
+4. Clone the [pulse-starter](https://github.com/prisma/pulse-starter) repository and follow the steps in the README that walk you through the application-side of the setup
+
 
 # Cleaning Up
 When you are done testing, be sure to run the following command to remove all resources created by Terraform if you no longer need them:
@@ -66,6 +73,8 @@ When you are done testing, be sure to run the following command to remove all re
 ```sh
 terraform destroy
 ```
+
+You will be asked to confirm destroying the services. Type `'yes'` and hit `Enter`. 
 
 > **Warning**
 > Leaving these resources running on your account may incur cost.
